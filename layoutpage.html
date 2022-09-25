@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+
+    <title>layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        h2{
+            background-color:burlywood;
+            color:brown;
+        }
+        body{
+            font-family:Century;
+        }
+        header{
+            background-color:antiquewhite;
+            padding:30px;
+            text-align:center;
+            font-size:30px;
+            color:chocolate;
+        }
+        nav{
+            float:left;
+            width:40%;
+            height:500px;
+            background-color:burlywood;
+            padding:20px;
+            color:brown;
+        }
+        nav ul{
+            list-style-type:none;
+            padding:0;
+        }
+        nav ul li a{
+                list-style:none;
+                color:brown;
+        }
+        article{
+            float:left;
+            padding:20px;
+            width:60%;
+            background-color:bisque;
+            height:500px;
+        }
+        section{
+            display:table;
+            clear:both;
+
+        }
+        footer{
+            background-color:antiquewhite;
+            color:chocolate;
+            padding:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        layout-float
+    </h2>
+    <header>
+        <h2>technologies</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">html</a>
+                    <a href="#">css</a>
+                    <a href="#">bootstrap</a>
+                    <a href="#">javascript</a>
+                    <a href="#">reactjs</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1>lorem:</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        </article>
+    </section>
+    <footer>
+        <p>copyright @k.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input id="num1" type="number" />
+    <input id="num2" type="number" />
+    <button type="submit" onclick="add()">submit</button>
+    <p>answer is: <input id="ans" /></p>
+    <script>
+        function add() {          
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("ans").value = sum;
+        }
+    </script>
+</body>
+</html>

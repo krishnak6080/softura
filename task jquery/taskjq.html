@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>product</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>apple</td>
+            <td><input type="number" id="txt1" onkeyup="addNos()" /></td>
+        </tr>
+        <tr>
+            <td>mango</td>
+            <td><input type="number" id="txt2" onkeyup="addNos()" /></td>
+        </tr>
+        <tr>
+            <td>grape</td>
+            <td><input type="number" id="txt3" onkeyup="addNos()" /></td>
+        </tr>
+    </table>
+    <label id="res"></label>
+    <script>
+        $(document).ready(function () {
+            addNos()
+        });
+        function addNos() {
+            var n1 = $('#txt1').val();
+            if (!n1) {
+                n1 = 0;
+            }
+            var n2 = $('#txt2').val();
+            if (!n2) {
+                n2 = 0;
+            }
+            var n3 = $('#txt3').val();
+            if (!n3) {
+                n3 = 0;
+            }
+            sum = Number(n1) + Number(n2) + Number(n3);
+            $('#res').html(sum);
+        }
+    </script>
+</body>
+</html>
